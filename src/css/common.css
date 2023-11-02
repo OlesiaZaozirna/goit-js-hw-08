@@ -21,29 +21,27 @@ input {
   font: inherit;
 }
 
-/* Общие стили для кнопок */
 .btn {
   margin: 20px;
   text-decoration: none;
   height: 60px;
-  color: hsl(55, 95%, 62%);
   border-radius: 5px;
   padding: 10px 15px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
   outline: none;
+  justify-content: center;
+  color: white;
+  font-family: 'Raleway';
+  font-size: 2rem;
+  align-items: center;
+  font-weight: 600;
 }
 
-.btn:hover {
-  color: #000;
-}
-
-/* Стили для градиентной рамки */
+/* Стилі для рамки з градієнтом */
 .gradient-border {
   --borderWidth: 3px;
   background: #151515;
@@ -85,13 +83,4 @@ input {
   100% {
     background-position: 0% 50%;
   }
-}
-
-#box {
-  justify-content: center;
-  color: white;
-  font-family: 'Raleway';
-  font-size: 2rem;
-  align-items: center;
-  font-weight: 600;
 }
