@@ -13,7 +13,7 @@ player.on('timeupdate', throttle(onPlay, 1000));
 
 player.setCurrentTime(JSON.parse(localStorage.getItem(VCT_KEY)) || 0);
 
-const currentTime = localStorage.getItem(localStorageKey);
+const currentTime = localStorage.getItem(VCT_KEY);
 if (currentTime) {
   player.setCurrentTime(currentTime);
 }

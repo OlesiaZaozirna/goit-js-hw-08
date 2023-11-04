@@ -25,11 +25,15 @@ function reloadPage() {
 
 function onFormSubmit(event) {
   event.preventDefault();
-  console.log({ email: email.value, message: message.value });
 
+  // Зміни починаються тут
   if (email.value === '' || message.value === '') {
-    return alert(`Будь ласка, заповніть всі обов'язкові поля.`);
+    alert(`Будь ласка, заповніть всі обов'язкові поля.`);
+    return; // При зупинці виконання коду залишити функцію, щоб не виводити дані
   }
+  // Зміни закінчуються тут
+
+  console.log({ email: email.value, message: message.value });
 
   localStorage.removeItem(STORAGE_KEY);
   event.currentTarget.reset();
